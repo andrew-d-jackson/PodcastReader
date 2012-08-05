@@ -1,0 +1,14 @@
+{
+	"name": "Podcast Reader",
+	"version": "0.2",
+	"manifest_version": 2,
+	"description": "Better Podcast Support For Google Reader",
+	"icons": {
+		"128": "icon_128.png"
+	},
+	"permissions": ["tabs"],
+	"content_scripts": [{
+		"matches": ["https://www.google.com/reader/*"],
+		"js": ["jquery.js", "script.js"]
+    	}]
+}
